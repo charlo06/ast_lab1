@@ -1,0 +1,19 @@
+{
+  "name": "ast_work",
+  "version": "0.1.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/charlo06/ast_lab1.git"
+  },
+  "author": "charlelie obadia",
+  "dependencies": {
+    },
+    "devDependencies": {
+    }
+
+}
