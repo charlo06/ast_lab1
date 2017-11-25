@@ -4,7 +4,7 @@
   "description": "",
   "main": "lib/index.js",
   "scripts": {
-     "start": "nodemon",
+     "start": "nodemon", 
      "test": "node node_modules/mocha/bin/mocha"
  },
   "repository": {
