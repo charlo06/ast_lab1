@@ -2,18 +2,22 @@
   "name": "ast_work",
   "version": "0.1.0",
   "description": "",
-  "main": "app.js",
+  "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+     "start": "nodemon",
+     "test": "node node_modules/mocha/bin/mocha"
+ },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/charlo06/ast_lab1.git"
   },
   "author": "charlelie obadia",
   "dependencies": {
-    },
-    "devDependencies": {
-    }
-
+     "gulp": "^1.0.0",
+     "morgan": "^1.9.0"
+   },
+   "devDependencies": {
+     "mocha": "^4.0.1",
+     "should": "^13.1.1"
+   }
 }
