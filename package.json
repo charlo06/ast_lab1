@@ -24,6 +24,7 @@
     "should": "^13.1.1",
     "coffee-script": "^1.12.7",
     "stylus": "^0.54.5",
+    "should-http": "^0.1.1",
     "pug": "^2.0.0-rc.4"
   }
 }

@@ -1,37 +1,20 @@
-var should = require('should')
-var user = require('../lib/user.js')
+var should = require('should');
+require('should-http');
+var server = require('../lib/js/index.js');
+var http = require('http');
 
-describe('user', function() {
+describe('server response', function () {
+  it('should return 200', function (done) {
+    http.get('http://127.0.0.1:8888', function(res) {
+      res.should.have.status(200);
+      done();
+    });
+  });
 
-it('saves properly', function(done) {
-  // ....
-  user.save("user","password", function(err) {
-    should.not.exist(err)
-    done()
-  })
-})
-
-it('doesn\'t save because missing parameter', function(done) {
-  // ....
-  user.save("user", function(err) {
-    should.exist(err)
-    done()
-  })
-})
-
-it('gets properly', function(done) {
-  // ....
-  user.get("id099880", function(err) {
-    should.not.exist(err)
-    done()
-  })
-})
-
-it('doesn\'t get because missing parameter', function(done) {
-  //
-  user.get(function(err) {
-    should.exist(err)
-    done()
- })
-})
-})
+  it('should return 404', function (done) {
+    http.get('http://127.0.0.1:8888/missing-file.html', function(res) {
+      res.should.have.status(404);
+      done();
+    });
+  });
+});
