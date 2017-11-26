@@ -1,8 +1,10 @@
 # Continous work for ast
 ## Charlélie Obadia
 
-## Run
-run the command `node index.js`
+## Commands
+* Build project : `npm run build`
+* start project : `npm run start`
+* run tests : `npm run test`
 
 ## Contributors
 charlelie obadia

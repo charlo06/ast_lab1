@@ -4,20 +4,22 @@
   "description": "",
   "main": "lib/index.js",
   "scripts": {
-     "start": "nodemon",
-     "test": "node node_modules/mocha/bin/mocha"
- },
+    "start": "nodemon",
+    "build": "coffee --compile --output lib/ src/",
+    "test": "node node_modules/mocha/bin/mocha --compilers coffee:coffee-script/register"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/charlo06/ast_lab1.git"
   },
   "author": "charlelie obadia",
   "dependencies": {
-     "gulp": "^1.0.0",
-     "morgan": "^1.9.0"
-   },
-   "devDependencies": {
-     "mocha": "^4.0.1",
-     "should": "^13.1.1"
-   }
+    "coffee-script": "^1.12.7",
+    "gulp": "^1.0.0",
+    "morgan": "^1.9.0"
+  },
+  "devDependencies": {
+    "mocha": "^4.0.1",
+    "should": "^13.1.1"
+  }
 }

@@ -1,5 +1,5 @@
 var should = require('should')
-var user = require('../src/user.js')
+var user = require('../lib/user.js')
 
 describe('user', function() {
 
