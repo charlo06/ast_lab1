@@ -1,5 +1,5 @@
 # Continous work for ast
-## Charlélie Obadia
+## Charlélie Obadia Pierre Gourlat
 
 ## Commands
 * Build project : `npm run build`
@@ -7,4 +7,4 @@
 * run tests : `npm run test`
 
 ## Contributors
-charlelie obadia
+Charlelie Obadia Pierre Gourlat
