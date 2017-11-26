@@ -1,0 +1,137 @@
+body {
+  width: 972px;
+  margin: 0 auto;
+}
+main {
+  width: 75%;
+  float: left;
+}
+.float_left {
+  width: 25%;
+  float: left;
+  color: #0a6dc0;
+  font-style: bold;
+}
+aside {
+  width: 70%;
+  margin-left: 30%;
+  margin-top: 35px;
+}
+h1 {
+  background-color: #048;
+  background: radial-gradient(#000, #048);
+  padding: 10px;
+  border-radius: 20px 0px 20px 0px;
+  color: #fff;
+  margin: 0;
+  display: inline-block;
+}
+#students {
+  width: 25%;
+  margin-left: 75%;
+  margin-top: 45px;
+}
+#students article {
+  border: 2px solid #048;
+  border-radius: 25px;
+  padding: 0px;
+  margin: 5px;
+  box-shadow: 2px 2px 2px #888;
+}
+#students article a {
+  background-color: #048;
+  background: radial-gradient(#000, #048);
+  padding: 10px;
+  border-radius: 20px 0px 20px 0px;
+  font-size: 15px;
+  color: #fff;
+  margin: 0;
+  display: inline-block;
+  position: relative;
+  left: 105px;
+}
+#students article h2 {
+  color: #048;
+  font-size: 15px;
+  position: relative;
+  left: 10px;
+  margin: 2px;
+}
+#students article img {
+  position: relative;
+  top: 5px;
+  left: 10px;
+  padding-bottom: 5px;
+}
+#student img {
+  float: left;
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+footer {
+  clear: both;
+}
+.clear {
+  clear: both;
+}
+section {
+  border: 5px solid #048;
+  border-radius: 25px;
+  padding: 0px;
+  margin: 5px;
+  box-shadow: 5px 5px 5px #888;
+}
+nav.dropdownmenu {
+  width: 100%;
+}
+.dropdownmenu ul,
+.dropdownmenu li {
+  margin: 0;
+  padding: 0;
+}
+.dropdownmenu ul {
+  list-style: none;
+  width: 100%;
+}
+.dropdownmenu li {
+  float: left;
+  position: relative;
+  width: 25%;
+}
+.dropdownmenu li:hover a {
+  background: #048;
+}
+.dropdownmenu a {
+  background: #000;
+  color: #fff;
+  display: block;
+  font: bold 12px/20px sans-serif;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+#submenu {
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 35px;
+  visibility: hidden;
+  z-index: 1;
+}
+#submenu li {
+  float: none;
+  width: 100%;
+}
+#submenu a {
+  background-color: #048;
+}
+#submenu a:hover {
+  background: #df4b05;
+}
+li:hover ul#submenu {
+  opacity: 1;
+  top: 40px;
+  visibility: visible;
+}

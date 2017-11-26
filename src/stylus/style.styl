@@ -1,0 +1,131 @@
+body
+    width 972px
+    margin 0 auto
+
+main
+    width 75%
+    float left
+
+.float_left
+    width 25%
+    float left
+    color #0a6dc0
+    font-style bold
+
+aside
+    width 70%
+    margin-left 30%
+    margin-top 35px
+
+h1
+    background-color #004488
+    background radial-gradient(black,#004488)
+    padding 10px
+    border-radius 20px 0px 20px 0px
+    color white
+    margin 0
+    display inline-block
+
+#students
+    width 25%
+    margin-left 75%
+    margin-top 45px
+    article
+        border 2px solid #004488
+        border-radius 25px
+        padding 0px
+        margin 5px
+        box-shadow 2px 2px 2px #888888
+        a
+            background-color #004488
+            background radial-gradient(black,#004488)
+            padding 10px
+            border-radius 20px 0px 20px 0px
+            font-size 15px
+            color white
+            margin 0
+            display inline-block
+            position relative
+            left 105px
+        h2
+            color #004488
+            font-size 15px
+            position relative
+            left 10px
+            margin 2px
+        img
+            position relative
+            top 5px
+            left 10px
+            padding-bottom 5px
+
+#student
+    img
+        float left
+        margin-top 10px
+        margin-left 5px
+        margin-right 5px
+
+footer
+    clear both
+
+.clear
+    clear both
+
+section
+    border 5px solid #004488
+    border-radius 25px
+    padding 0px
+    margin 5px
+    box-shadow 5px 5px 5px #888888
+
+nav
+    &.dropdownmenu
+        width 100%
+
+.dropdownmenu ul, .dropdownmenu li
+    margin 0
+    padding 0
+
+.dropdownmenu
+    ul
+        list-style none
+        width 100%
+    li
+        float left
+        position relative
+        width 25%
+        &:hover
+            a
+                background #004488
+    a
+        background #000000
+        color #FFFFFF
+        display block
+        font bold 12px/20px sans-serif
+        padding 10px 25px
+        text-align center
+        text-decoration none
+        transition all .25s ease
+
+#submenu
+    left 0
+    opacity 0
+    position absolute
+    top 35px
+    visibility hidden
+    z-index 1
+    li
+        float none
+        width 100%
+    a
+        background-color #004488
+        &:hover
+            background #DF4B05
+
+li
+    &:hover
+        ul#submenu
+            opacity 1
+            top 40px
+            visibility visible

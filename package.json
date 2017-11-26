@@ -2,10 +2,10 @@
   "name": "ast_work",
   "version": "0.3.0",
   "description": "",
-  "main": "lib/index.js",
+  "main": "lib/js/index.js",
   "scripts": {
     "start": "nodemon",
-    "build": "coffee --compile --output lib/ src/",
+    "build": "coffee --compile --output lib/js/ src/coffee/ & stylus src/stylus --out lib/css & pug src/pug --out lib/html",
     "test": "node node_modules/mocha/bin/mocha --compilers coffee:coffee-script/register"
   },
   "repository": {
@@ -14,12 +14,16 @@
   },
   "author": "charlelie obadia",
   "dependencies": {
-    "coffee-script": "^1.12.7",
     "gulp": "^1.0.0",
-    "morgan": "^1.9.0"
+    "morgan": "^1.9.0",
+    "http": "",
+    "fs": "^0.0.1-security"
   },
   "devDependencies": {
     "mocha": "^4.0.1",
-    "should": "^13.1.1"
+    "should": "^13.1.1",
+    "coffee-script": "^1.12.7",
+    "stylus": "^0.54.5",
+    "pug": "^2.0.0-rc.4"
   }
 }
